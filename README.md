@@ -102,9 +102,14 @@ d00e1e7b8235 postgres           Up 6 minutes   0.0.0.0:5432->5432/tcp  cloud2fpg
 2fd3dfbf3a2d cloud2fpga-web     Up 6 minutes   0.0.0.0:3000->3000/tcp  cloud2fpga-web-1
 ```
 
-Once all the containers are up and running you will need to create a super user for
-Django. You can do that using the following docker compose command:
+Once all the containers are up and running you will we need to setup the database tables, and populate 
+it with a couple of rows. To setup the database, use the following command in a terminal or shell:
 
+```sh
+$ docker compose run api python manage.py migrate
+```
+
+Next need to create a super user for Django. You can do that using the following docker compose command:
 ```sh
 $ docker compose run api python manange.py createsuperuser
 ```
@@ -113,13 +118,6 @@ Follow all the prompts to create the username and password for the super user. O
 you have completed this task you can check that the command was succesfull by going 
 in your browser to http://localhost:8000/admin. Login using the credentials you created 
 when creating the super user.
-
-Next we need to setup the database tables, and populate it with a couple of rows. To
-setup the database, use the following command in a terminal or shell:
-
-```sh
-$ docker compose run api python manage.py migrate
-```
 
 Finally, to populate the database with some seed data, enter this final command in a 
 terminal or shell:
