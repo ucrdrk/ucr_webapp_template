@@ -35,7 +35,7 @@ services:
       - HOST=0.0.0.0
     command: npm run serve
     volumes:
-      - ./frontend:/app
+      - ./frontend/src:/app/src
     ports:
       - "3000:3000"
       - "9229:9229"
