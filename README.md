@@ -106,12 +106,12 @@ Once all the containers are up and running you will we need to setup the databas
 it with a couple of rows. To setup the database, use the following command in a terminal or shell:
 
 ```sh
-$ docker compose run api python manage.py migrate
+$ docker compose exec api python manage.py migrate
 ```
 
 Next need to create a super user for Django. You can do that using the following docker compose command:
 ```sh
-$ docker compose run api python manange.py createsuperuser
+$ docker compose exec api python manange.py createsuperuser
 ```
 
 Follow all the prompts to create the username and password for the super user. Once 
@@ -123,7 +123,7 @@ Finally, to populate the database with some seed data, enter this final command 
 terminal or shell:
 
 ```sh
-$ docker compose run api python manage.py loaddata seed.json
+$ docker compose exec api python manage.py loaddata seed.json
 ```
 
 That's it. Now when you go to http://localhost:8800 you should see the front-end with 
