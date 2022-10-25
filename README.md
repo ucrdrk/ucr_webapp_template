@@ -145,14 +145,15 @@ If you want to view the log of one container then type the following command int
 terminal or shell:
 
 ```sh
-$ docker log <container name>
+$ docker compose logs <service name>
 ```
 
-The above command will dump the entire contents of the log to the console. To find the container name, use the `docker container ps` command. To follow the
-log for a specific container, add the `--follow` argument like this:
+The above command will dump the entire contents of the log to the console. To find the service 
+name, look in the docker-compose.yml file and identify the serive you want to see the log for.
+ To follow the log for a specific container, add the `--follow` argument like this:
 
 ```sh
-$ docker log --follow <container name>
+$ docker compose logs --follow <service name>
 ```
 
 ### Getting a shell in a compose container
@@ -161,13 +162,13 @@ You can bring up a shell for any of the containers as well. Most, if not all, th
 containers include the bash shell. Type the following command to bring up a shell:
 
 ```sh
-$ docker compose exec <container name> /bin/bash
+$ docker compose exec <service name> /bin/bash
 ```
 
 You can even print up the PostgreSQL command line tool with the following command:
 
 ```sh
-$ docker compose exec cloud2fpga-db-1 psql -U postgres
+$ docker compose exec db psql -U postgres
 ```
 
 ### Why are my changes not taking affect
@@ -181,12 +182,3 @@ the containers. The following command will rebuild all the containers in a compo
 ```sh
 $ docker compose build
 ```
-
-If you see permission issues with the database, execute the following command in a host
-terminal or shell to change the permission of the database back to yourself:
-
-```sh
-$ sudo chown -R $USER:$USER data
-```
-
-You might need to run this command everytime your rebuild all the containers.
