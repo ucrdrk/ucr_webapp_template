@@ -96,10 +96,10 @@ Which should give you output similar to the following:
 
 ```sh
 CONTAINER ID IMAGE              STATUS         PORTS                   NAMES
-b44bc4b06074 cloud2fpga-proxy   Up 6 minutes   0.0.0.0:8800->80/tcp    cloud2fpga-proxy-1
-ce4842fbc28b cloud2fpga-api     Up 6 minutes   0.0.0.0:8000->8000/tcp  cloud2fpga-api-1
-d00e1e7b8235 postgres           Up 6 minutes   0.0.0.0:5432->5432/tcp  cloud2fpga-db-1
-2fd3dfbf3a2d cloud2fpga-web     Up 6 minutes   0.0.0.0:3000->3000/tcp  cloud2fpga-web-1
+b44bc4b06074 ucr_webapp_template-proxy   Up 6 minutes   0.0.0.0:8800->80/tcp    ucr_webapp_template-proxy-1
+ce4842fbc28b ucr_webapp_template-api     Up 6 minutes   0.0.0.0:8000->8000/tcp  ucr_webapp_template-api-1
+d00e1e7b8235 postgres           Up 6 minutes   0.0.0.0:5432->5432/tcp  ucr_webapp_template-db-1
+2fd3dfbf3a2d ucr_webapp_template-web     Up 6 minutes   0.0.0.0:3000->3000/tcp  ucr_webapp_template-web-1
 ```
 
 Once all the containers are up and running you will we need to setup the database tables, and populate 
