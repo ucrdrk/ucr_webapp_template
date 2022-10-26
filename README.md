@@ -37,7 +37,7 @@ breaking changes), and the fact that fewer and fewer students know Ruby. Python,
 by students, is known to be highly scalable, and while there have been breaking changes in the past, they do 
 not seem as severe as the Ruby and Rails changes.
 
-Djanog is a good replacement for Ruby on Rails because of its scalability and its similarity, with improvements
+Django is a good replacement for Ruby on Rails because of its scalability and its similarity, with improvements
 to Ruby on Rails. For example, in Ruby on Rails, the DB model is in a separate file from the Model. In Django, 
 both the code and DB model are located in the same file.
 
