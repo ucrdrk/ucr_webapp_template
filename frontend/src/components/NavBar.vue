@@ -3,7 +3,7 @@
         <img src="../assets/Untitled_design_1_-removebg-preview.png" class="logo">
         <h1 class="title">Cloud2FPGA</h1>
         <div class="menu">
-            <a href=""><div class="button">Get Started</div></a>
+            <router-link to="/login"><div class="button">Get Started</div></router-link>
         </div>
     </div>
 </template>

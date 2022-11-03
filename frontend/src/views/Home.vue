@@ -5,7 +5,7 @@
       <div class="right-side">
         <h2 class="statement">FPGA gaming. Simplified.</h2>
         <h3 class="sentence">Send ROM images to your MiSTer FPGA to play instantly.</h3>
-        <a href=""><div>Get Started</div></a>
+        <router-link to="/login"><div>Get Started</div></router-link>
       </div>
       <div class="left-side">
         <img src="" alt="Top of image">
