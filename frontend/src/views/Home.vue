@@ -1,14 +1,14 @@
 <template>
   <div class="site">
-    <NavBar/>
+    <NavBar navbartype='home' />
     <div class="landing">
       <div class="right-side">
         <h2 class="statement">FPGA gaming. Simplified.</h2>
         <h3 class="sentence">Send ROM images to your MiSTer FPGA to play instantly.</h3>
-        <router-link to="/login"><div>Get Started</div></router-link>
+        <router-link to="/login"><div class="landing-button">Get Started</div></router-link>
       </div>
       <div class="left-side">
-        <img src="" alt="Top of image">
+        <img src="../assets/cloud_games.png" alt="Top of image" width="520px">
       </div>
     </div>
   </div>
@@ -36,13 +36,30 @@
   color: #8AB0AB;
 }
 .left-side{
-  
+margin-left: 10%;
 }
 .statement{
-  font-size: 64pt;
+  font-size: 64px;
+  max-width: 495px;
 }
 .sentence{
-  font-size: 32pt;
+  margin-top: 40px;
+  font-size: 32px;
+  max-width: 452px;
+}
+.landing-button {
+  height: 86px;
+  line-height: 86px;
+  width: 224px;
+  margin-top: 88px;
+  margin-left: 87px;
+  background-color: #6D8B9C;
+  color: #1A1D1A;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align: center;
 }
 </style>
 

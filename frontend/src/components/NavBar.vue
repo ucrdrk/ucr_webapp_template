@@ -1,12 +1,22 @@
 <template>
     <div class="navbar">
-        <img src="../assets/Untitled_design_1_-removebg-preview.png" class="logo">
-        <h1 class="title">Cloud2FPGA</h1>
+        <router-link to="/" v-if="navbartype !== home" class="homelink">
+            <img src="../assets/logo.png" class="logo">
+            <h1 class="title">Cloud2FPGA</h1>
+        </router-link>
         <div class="menu">
-            <router-link to="/login"><div class="button">Get Started</div></router-link>
+            <router-link to="/login"><div v-if="navbartype ==='home'" class="button">Get Started</div></router-link>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        navbartype: String
+    }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
@@ -14,6 +24,10 @@
     display: flex;
     flex: 0 1 64px;
     justify-content: flex-start;
+}
+.homelink {
+    display: flex;
+    flex-direction: row;
 }
 .logo {
     width: 64px;
