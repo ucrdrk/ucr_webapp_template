@@ -5,7 +5,7 @@
             <h1 class="title">Cloud2FPGA</h1>
         </router-link>
         <div class="menu">
-            <router-link to="/login"><div v-if="navbartype ==='home'" class="button">Get Started</div></router-link>
+            <router-link to="/register"><div v-if="navbartype ==='home'" class="button">Get Started</div></router-link>
         </div>
     </div>
 </template>
