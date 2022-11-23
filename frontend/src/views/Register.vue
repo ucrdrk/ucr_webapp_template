@@ -2,14 +2,18 @@
     <div class="register">
       <NavBar navbartype='register' />
       <div class="registerbox">
-        <h3 class="registertitle">Register</h3>
-        <p class="prompt">Email</p>
-        <input type="text" name="user" class="userinput" id="">
-        <p class="prompt">Password</p>
-        <input type="password" name="pw" class="userinput" id="">
-        <p class="prompt">Confirm Password</p>
-        <input type="confirm password" name="cpw" class="userinput" id="">
-        <input type="button" value="Register" id="submit">
+        <form @submit.prevent="submitForm">
+          <h3 class="registertitle">Register</h3>
+          <p class="prompt">Username</p>
+          <input type="text" class="userinput" v-model="username">
+          <p class="prompt">Email</p>
+          <input type="text" class="userinput" v-model="email">
+          <p class="prompt">Password</p>
+          <input type="password" class="userinput" v-model="password">
+          <p class="prompt">Confirm Password</p>
+          <input type="password" class="userinput" v-model="password2">
+          <button>Submit</button>
+        </form>
       </div>
     </div>
   </template>
@@ -64,19 +68,34 @@
   
   <script>
   import NavBar from '../components/NavBar.vue';
+
+  import axios from 'axios'
   
   export default {
     name: "Register",
     components: {
       NavBar,
-  },
+    },
     data () {
       return {
-        values: []
+        username: "",
+        email: "",
+        password: "",
+        password2: "",
       }
     },
-    created: function () {
-      
+    methods: {
+        submitForm(){
+          const formData = {
+            username: this.username,
+            email: this.email,
+            password: this.password,
+            password2: this.password2
+          }
+          axios
+              .post('/api/account/register', formData)
+              
+        }
     }
   };
   </script>
