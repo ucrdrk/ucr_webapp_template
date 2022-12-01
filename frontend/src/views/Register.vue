@@ -12,7 +12,7 @@
           <input type="password" class="userinput" v-model="password">
           <p class="prompt">Confirm Password</p>
           <input type="password" class="userinput" v-model="password2">
-          <button>Submit</button>
+          <button id="submit">Submit</button>
         </form>
       </div>
     </div>
@@ -24,7 +24,7 @@
     background-color: #1A1D1A;
   }
   .registerbox {
-    height: 670px;
+    height: auto;
     width: 500px;
     margin: auto;
     margin-top: 4em;
@@ -35,7 +35,7 @@
   }
   .registertitle {
     text-align: center;
-    margin: 51px auto 55px;
+    margin: 51px auto 30px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -61,7 +61,8 @@
     width: 330px;
     height: 55px;
     margin-left: 15%;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 30px;
   }
   </style>
@@ -94,6 +95,13 @@
           }
           axios
               .post('/api/account/register', formData)
+              .then(response => {
+                this.$router.push('/login')
+                console.log(response)
+              })
+              .error(error => {
+                console.log(error)
+              })
               
         }
     }
