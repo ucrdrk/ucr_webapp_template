@@ -2,17 +2,27 @@
   <div class="login">
     <NavBar navbartype='login' />
     <div class="loginbox">
-      <h3 class="logintitle">Login</h3>
-      <p class="prompt">Email</p>
-      <input type="text" name="user" class="userinput" id="">
-      <p class="prompt">Password</p>
-      <input type="password" name="pw" class="userinput" id="">
-      <input type="button" value="Login" id="submit">
+      <form @submit.prevent="submitForm">
+        <h3 class="logintitle">Login</h3>
+        <p class="prompt">Email</p>
+        <input type="text" class="userinput" v-model="username">
+        <p class="prompt">Password</p>
+        <input type="password" class="userinput" v-model="password">
+        <button type="submit" id="submit">Log in</button>
+        <p class="switch">
+          Don't have an account?
+        <router-link to="/register">Register here.</router-link> 
+        </p>
+      </form>
     </div>
   </div>
 </template>
 
 <style>
+.switch {
+  margin-left: 15%;
+  margin-bottom: 22px;
+}
 .login {
   height: 100vh;
   background-color: #1A1D1A;
@@ -62,6 +72,7 @@
 
 <script>
 import NavBar from '../components/NavBar.vue';
+import axios from 'axios'
 
 export default {
   name: "Login",
@@ -70,7 +81,37 @@ export default {
 },
   data () {
     return {
-      values: []
+      username: '',
+      password: ''
+    }
+  },
+  methods: {
+    submitForm(){
+      const formData = {
+        username: this.username,
+        password: this.password 
+      }
+
+      axios
+        .post('/api/account/login', formData)
+        .then(response => {
+          console.log(response)
+
+          const token = response.data.token
+
+          this.$store.commit('setToken', token)
+
+          axios.defaults.headers.common['Authorization'] = 'Token ' + token
+
+          localStorage.setItem('token', token)
+          //testing
+          //console.log(localStorage.getItem('token'))
+          //console.log(this.$store.state.token)
+          this.$router.push('/mainpage')
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   },
   created: function () {

@@ -13,12 +13,19 @@
           <p class="prompt">Confirm Password</p>
           <input type="password" class="userinput" v-model="password2">
           <button id="submit">Submit</button>
+          <p class="switch">
+          Already have an account?
+          <router-link to="/login">Login here.</router-link> 
+        </p>
         </form>
       </div>
     </div>
   </template>
   
   <style>
+  .switch {
+  margin-left: 15%;
+  }
   .register {
     height: 100vh;
     background-color: #1A1D1A;

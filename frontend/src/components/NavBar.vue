@@ -1,11 +1,11 @@
 <template>
     <div class="navbar">
-        <router-link to="/" v-if="navbartype !== home" class="homelink">
+        <router-link to="/" class="homelink">
             <img src="../assets/logo.png" class="logo">
             <h1 class="title">Cloud2FPGA</h1>
         </router-link>
         <div class="menu">
-            <router-link to="/register"><div v-if="navbartype ==='home'" class="button">Get Started</div></router-link>
+            <router-link to="/login"><div v-if="navbartype ==='home'" class="button">Get Started</div></router-link>
         </div>
     </div>
 </template>
