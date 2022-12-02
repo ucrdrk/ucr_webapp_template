@@ -5,7 +5,7 @@
       <div class="right-side">
         <h2 class="statement">FPGA gaming. Simplified.</h2>
         <h3 class="sentence">Send ROM images to your MiSTer FPGA to play instantly.</h3>
-        <router-link to="/login"><div class="landing-button">Log in</div></router-link>
+        <router-link to="/login"><div class="landing-button">Get started</div></router-link>
       </div>
       <div class="left-side">
         <img src="../assets/cloud_games.png" alt="Top of image" width="520px">
