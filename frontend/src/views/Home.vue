@@ -1,5 +1,6 @@
 <template>
   <div class="site">
+    <GameComp gamebartype='home'/>
     <NavBar navbartype='home' />
     <div class="landing">
       <div class="right-side">
@@ -66,12 +67,14 @@ margin-left: 10%;
 <script>
 // @ is an alias to /src
 import NavBar from "../components/NavBar.vue";
+import GameComp from "../components/GameComp.vue";
 //import Vue from "vue";
 
 export default {
   name: "HomePage",
   components: {
     NavBar,
+    GameComp,
 },
   data () {
     return {
