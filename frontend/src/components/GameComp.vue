@@ -3,61 +3,76 @@
       <div class="modal">
         <header class="modal-header">
           <slot name="header">
-            Game
+            {{ gameTitle }}
           </slot>
+          <div class="platandYear">
+            <p class="plat">Platform</p>
+            <p class="year">2023</p>
+          </div>
         </header>
   
         <section class="modal-body">
-          <slot name="body">
-            This is the default body!
-          </slot>
+          <div class="boxart">boxart here</div>
          </section>
   
         <footer class="modal-footer">
           <button
             type="button"
             class="add-btn"
-            
           >
           Add
           </button>
         </footer>
       </div>
     </div>
-  </template>
+</template>
 <script>
 export default {
     props: {
-        gamebartype: String
+        gameTitle: String,
+        gamePlatform: String,
+        releaseYear: Number
     }
 }
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
   .modal-backdrop {
     position: fixed;
     height:261px;
     width:187px;
     background-color: #FFFFFF;
-    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
   }
 
   .modal {
-    overflow-x: auto;
     display: flex;
     flex-direction: column;
   }
-
   .modal-header {
+    font-family: 'Inria Sans', sans-serif;
     position: relative;
     font-size: 16px;
     text-align: center;
-    top:-10px;
-
+    margin-top: 10px;
   }
+  .platandYear {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .plat {
+    margin-right: 25px;
+  }
+  .year{
+    margin-left: 25px;
+  }
+
   .modal-footer {
-    padding: 15px;
+
     font-size: 16px;
     text-align: center;
     display: flex;
@@ -67,19 +82,19 @@ export default {
     position:relative;
     text-align: center;
     color: #1A1D1A;
-    justify-content: space-between;
-  }
 
+  }
 
   .modal-body {
     position: relative;
-    padding: 20px 10px;
+    margin-top: 5px;
+    height: 160px;
   }
 
-
-
   .add-btn {
+    font-family: 'Inria Sans', sans-serif;
     color: #FFFFFF;
+    border: #1A1D1A;
     background-color: #26413C;
     font-size: 20px;
     font-style: bold;

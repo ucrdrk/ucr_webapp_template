@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <GameComp gamebartype='home'/>
+    <GameComp gameTitle="Pacman"/>
     <NavBar navbartype='home' />
     <div class="landing">
       <div class="right-side">
