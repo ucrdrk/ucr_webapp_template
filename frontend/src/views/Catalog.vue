@@ -9,10 +9,20 @@
                 </div>
                 <div class="mygames">
                     <h2>My Games</h2>
+                    <div class="myList">
+                      <div v-for="game in games" :key="game.id" class="card">
+                        <GameComp :info="game"/>
+                      </div>
+                    </div>
                 </div>
             </div>
             <div class="catalog">
-
+              <h2>Catalog</h2>
+              <div class="theList">
+                <div v-for="game in allGames" :key="game.id" class="card">
+                  <GameComp :info="game"/>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -58,22 +68,51 @@
     font-size: 24px;
     margin-top: 20%;
 }
-.mygames {
-    display: flex;
+.myList{
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr 5fr 5fr;
+  column-gap: 1rem;
+  row-gap: 250px;
+  margin: 0 auto;
+}
+.theList{
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr 5fr 5fr;
+  column-gap: 1rem;
+  row-gap: 100px;
+  margin: 0 auto;
+}
+.card {
+  width: 186px;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.catalog {
+  width: 75%;
+  margin: auto;
 }
 </style>
 
 <script>
+    import myGames from "../assets/userGames.json"
+    import allGames from "../assets/catalogGames.json"
+    import GameComp from "../components/GameComp.vue";
     import NavBar from "../components/NavBar.vue";
 
     export default {
         name: "HomePage",
         components: {
-            NavBar,
-    },
+          NavBar,
+          GameComp
+        },
   data () {
     return {
-      values: []
+      values: [],
+      games: myGames,
+      allGames: allGames
     }
   },
   created: function () {

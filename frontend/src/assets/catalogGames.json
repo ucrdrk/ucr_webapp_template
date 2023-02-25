@@ -1,0 +1,86 @@
+[
+    {
+        "gameTitle": "The Legend Of Zelda: A Link To The Past",
+        "gamePlatform": "SNES",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vzn.png",
+        "releaseYear": 1992
+    },
+    {
+        "gameTitle": "Street Fighter II Turbo",
+        "gamePlatform": "Arcade",
+        "boxart": "https://i.pinimg.com/originals/95/91/b8/9591b8ffc107003e3f1b9a9df3b4e9d4.jpg",
+        "releaseYear": 1992
+    },
+    {
+        "gameTitle": "Tetris",
+        "gamePlatform": "NES",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ufk.png",
+        "releaseYear": 1989
+    },
+    {
+        "gameTitle": "Outrun",
+        "gamePlatform": "Arcade",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2oj4.png",
+        "releaseYear": 1986
+    },
+    {
+        "gameTitle": "Space Invaders",
+        "gamePlatform": "Arcade",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co25xd.png",
+        "releaseYear": 1978
+    },
+    {
+        "gameTitle": "Super Mario Kart",
+        "gamePlatform": "SNES",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21w8.png",
+        "releaseYear": 1992
+    },
+    {
+        "gameTitle": "Streets Of Rage 2",
+        "gamePlatform": "Sega Genesis",
+        "boxart": "",
+        "releaseYear": 1992
+    },
+    {
+        "gameTitle": "Super Metroid",
+        "gamePlatform": "SNES",
+        "boxart": "",
+        "releaseYear": 1994
+    },
+    {
+        "gameTitle": "Duck Hunt",
+        "gamePlatform": "NES",
+        "boxart": "",
+        "releaseYear": 1984
+}, 
+{
+        "gameTitle": "Paperboy",
+        "gamePlatform": "arcade",
+        "boxart": "",
+        "releaseYear": 1985
+}, 
+{
+        "gameTitle": "Ms Pac-Man",
+        "gamePlatform": "arcade",
+        "boxart": "",
+        "releaseYear": 1982
+}, 
+{
+        "gameTitle": "Pong",
+        "gamePlatform": "arcade",
+        "boxart": "",
+        "releaseYear": 1972
+}, 
+{
+        "gameTitle": "Sensible Soccer",
+        "gamePlatform": "Amiga and MS-DOS",
+        "boxart": "",
+        "releaseYear": 1992
+}, 
+{
+        "gameTitle": "Day Of The Tentacle",
+        "gamePlatform": "MS-DOS",
+        "boxart": "",
+        "releaseYear": 1993
+}
+]
