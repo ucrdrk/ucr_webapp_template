@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from games.models import Games #Get the data model from games
 
 from django.conf import settings
 from django.db.models.signals import post_save
@@ -10,7 +11,7 @@ from rest_framework.authtoken.models import Token
 class User(AbstractUser):
     birth_date = models.DateField(null=True, blank=True)
     avatar = models.ImageField(upload_to ='avatars/', null=True, blank=True)
-
+    game = models.ManyToManyField('games.Games')
     def __str__(self):
         return self.username
 
