@@ -26,3 +26,10 @@ class RegistrationSerializer(serializers.ModelSerializer):
         account.set_password(password)
         account.save()
         return account
+
+
+class UserGameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id','username','game']
+        depth = 1 #to get nested data
