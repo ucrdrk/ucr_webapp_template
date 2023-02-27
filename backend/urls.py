@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     #REST
-    path('api/account/', include('account.api.urls', 'account_api')),
-    path('account/',include('account.api.urls')), #This was in the api folder I and it didnt work
-    #when i put it in the backend it worked
+    #path('api/account/', include('account.api.urls', 'account_api')),
+    path('account/',include('account.api.urls', namespace='accounts')), #This was in the api folder I and it didnt work
+    #when i put it in the backend it worked. made it unique kept getting error
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
