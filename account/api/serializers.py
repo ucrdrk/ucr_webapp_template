@@ -31,5 +31,5 @@ class RegistrationSerializer(serializers.ModelSerializer):
 class UserGameSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','username','game']
+        fields = ['account_id','username','game']
         depth = 1 #to get nested data
