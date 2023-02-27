@@ -9,7 +9,7 @@ from django.contrib.auth.admin import UserAdmin
 class CustomUserAdminPage(UserAdmin):
     model = User
     add_from = CustomUserForm
-    list_display = ('username','email','birth_date','first_name','last_name','is_staff','date_joined')
+    list_display = ('username','email','birth_date','last_name','is_staff','date_joined','id')
 
 
     fieldsets = (
