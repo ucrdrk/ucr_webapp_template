@@ -47,7 +47,7 @@ def userGameAPI(request,id=0):
 
         #data[0]['username'] # this returns the first username in the whole database.
 
-        return JsonResponse(data[1], safe=False)
+        return JsonResponse(data[0], safe=False)
 #'''
 
 '''
