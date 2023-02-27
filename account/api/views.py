@@ -36,10 +36,26 @@ def registration_view(request):
         return Response(data)
 
 
-
+#'''
 @csrf_exempt
 def userGameAPI(request,id=0):
     if request.method=='GET':
+        user_id = request.GET['username']
         users = User.objects.all() 
         user_serializer = UserGameSerializer(users,many=True)
-        return JsonResponse(user_serializer.data, safe=False)
+        data = user_serializer.data
+
+        #data[0]['username'] # this returns the first username in the whole database.
+
+        return JsonResponse(data[1], safe=False)
+#'''
+
+'''
+@csrf_exempt
+def userGameAPI(request):
+    if request.method=='GET':
+        id = request.GET(user_id)
+        users = User.objects.get(usename=id) 
+        user_serializer = UserGameSerializer(users,many=True)
+        return id
+#'''
