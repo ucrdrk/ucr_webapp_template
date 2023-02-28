@@ -21,9 +21,10 @@ from django.urls import include, path
 urlpatterns = [
     path('api/', include('api.urls')),
     path('admin/', admin.site.urls),
+    path('account/',include('account.api.urls', 'accounts')), #This was in the api folder I and it didnt work
+    #when i put it in the backend it worked. made it unique kept getting error
 
     #REST
-    #path('api/account/', include('account.api.urls', 'account_api')),
-    path('account/',include('account.api.urls', namespace='accounts')), #This was in the api folder I and it didnt work
-    #when i put it in the backend it worked. made it unique kept getting error
+    path('api/account/', include('account.api.urls', 'account_api')),
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
