@@ -2,18 +2,18 @@
     <div class="modal-backdrop">
       <div class="modal">
         <header class="modal-header">
-          <slot name="header">
-            {{ gameTitle }}
-          </slot>
+          <div name="header">
+            {{ info.gameTitle }}
+          </div>
           <div class="platandYear">
-            <p class="plat">Platform</p>
-            <p class="year">2023</p>
+            <p class="plat">{{info.gamePlatform}}</p>
+            <p class="plat">{{info.releaseYear}}</p>
           </div>
         </header>
   
-        <section class="modal-body">
-          <div class="boxart">boxart here</div>
-         </section>
+        <div class="modal-body">
+          <img class="boxart" :src="info.boxart" alt="boxart not found">
+         </div>
   
         <footer class="modal-footer">
           <button
@@ -29,19 +29,15 @@
 <script>
 export default {
     props: {
-        gameTitle: String,
-        gamePlatform: String,
-        releaseYear: Number
+        info: Object
     }
 }
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
   .modal-backdrop {
-    position: fixed;
-    height:261px;
     width:187px;
-    background-color: #FFFFFF;
+    background-color: #1a1d1a;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -60,19 +56,17 @@ export default {
   }
   .platandYear {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    margin-left: 10px;
     margin-top: 10px;
   }
   .plat {
     margin-right: 25px;
-  }
-  .year{
-    margin-left: 25px;
+    margin: auto;
+    text-align: center;
   }
 
   .modal-footer {
-
     font-size: 16px;
     text-align: center;
     display: flex;
@@ -81,13 +75,11 @@ export default {
   .modal-header {
     position:relative;
     text-align: center;
-    color: #1A1D1A;
-
+    color: white;
   }
 
   .modal-body {
     position: relative;
-    margin-top: 5px;
     height: 160px;
   }
 
@@ -99,9 +91,14 @@ export default {
     font-size: 20px;
     font-style: bold;
     height:34.68px;
-    position: absolute;
-    left: 50.86px;
-    top: 217px;
     width:84.9px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .boxart{
+    display: block;
+    max-width: 100%;
+    max-height: 160px;
+    margin: auto;
   }
 </style>
