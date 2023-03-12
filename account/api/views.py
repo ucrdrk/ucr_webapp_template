@@ -63,7 +63,7 @@ def userGameAPI(request,id=0):
         --data[0]['game'][1]['rma_file']-- returns the file path to the rma file
         #'''
 
-        return JsonResponse(data[0]['game'][1]['rma_file'], safe=False)
+        return JsonResponse(data[0]['game'], safe=False)
         #return JsonResponse(data[0]['game'][1]['rma_file'], safe=False)
 
 
