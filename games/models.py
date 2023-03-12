@@ -6,7 +6,7 @@ class Games(models.Model):
     file_location = models.CharField(max_length=200)
     game_year = models.IntegerField()
     cover = models.CharField(max_length=200)
-    game_size = models.FloatField()
+    file_size = models.FloatField()
     rma_file = models.FileField(upload_to='rmaFolder/', blank=True)
     def __str__(self):
         return self.game_name
