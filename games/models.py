@@ -8,5 +8,6 @@ class Games(models.Model):
     cover = models.CharField(max_length=200)
     file_size = models.FloatField()
     rma_file = models.FileField(upload_to='rmaFolder/', blank=True)
+    rbf_file = models.FileField(upload_to='rbfFolder/', blank=True)
     def __str__(self):
         return self.game_name
