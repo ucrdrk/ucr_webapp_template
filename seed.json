@@ -1,23 +1,100 @@
 [
-{
-    "model": "api.foo",
-    "pk": 1,
-    "fields": {
-        "name": "eek"
+    {
+        "model": "games.Games",
+        "pk": 1,
+        "fields": {
+            "game_name": "4D Warriors (315-5162)",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/4dwarrio.zip",
+            "file_location": "games/mame/4dwarrio.zip",
+            "game_year": "9999",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/4D Warriors (315-5162).mra",
+            "rbf_file": "rbfFolder/SEGASYS1_20210618.rbf",
+            "file_size": "10.0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 2,
+        "fields": {
+            "game_name": "19XX The War Against Destiny (Euro 960104)",
+            "game_file_link": "https://archive.org/download/mame.0229/19xx.zip,https://archive.org/download/mame.0229/qsound.zip",
+            "file_location": "games/mame/19xx.zip, games/mame/qsound.zip",
+            "game_year": "9999",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/19XX The War Against Destiny (Euro 960104).mra",
+            "rbf_file": "rbfFolder/jtcps2_20220819.rbf",
+            "file_size": "10.0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 3,
+        "fields": {
+            "game_name": "280Z-ZZAP (US)",
+            "game_file_link": "https://archive.org/download/mame.0240/280zzzap.zip",
+            "file_location": "games/mame/280zzzap.zip",
+            "game_year": "1976",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/280Z-ZZAP (US).mra",
+            "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
+            "file_size": "10.0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 4,
+        "fields": {
+            "game_name": "Adventure Quiz Capcom World 2 -Japan 920611-",
+            "game_file_link": "https://archive.org/download/MAME217RomsOnlyMerged/MAME%200.217%20ROMs%20%28merged%29.zip/cworld2j.zip",
+            "file_location": "games/mame/cworld2j.zip",
+            "game_year": "1941",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/Adventure Quiz Capcom World 2 -Japan 920611-.mra",
+            "rbf_file": "rbfFolder/jtcps1_20220819.rbf",
+            "file_size": "10.0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 5,
+        "fields": {
+            "game_name": "1941  Counter Attack -World 900227-",
+            "game_file_link": "https://archive.org/download/mame.0240/1941.zip",
+            "file_location": "games/mame/1941.zip",
+            "game_year": "1941",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/1941  Counter Attack -World 900227-.mra",
+            "rbf_file": "rbfFolder/jtcps1_20220819.rbf",
+            "file_size": "10.0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 6,
+        "fields": {
+            "game_name": "1942",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/1942.zip,https://archive.org/download/hbmame0220/1942.zip",
+            "file_location": "games/mame/1942.zip,games/hbmame/1942.zip",
+            "game_year": "1984",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/1942.mra",
+            "rbf_file": "rbfFolder/jt1942_20220819.rbf",
+            "file_size": "10.0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 7,
+        "fields": {
+            "game_name": "1943 Kai Midway Kaisen",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/1943kai.zip,https://archive.org/download/hbmame0220/1943kai.zip",
+            "file_location": "games/mame/1943kai.zip,games/hbmame/1943kai",
+            "game_year": "1987",
+            "cover": "https://www.igdb.com/ find the image",
+            "rma_file": "rmaFolder/1943 Kai Midway Kaisen.mra",
+            "rbf_file": "rbfFolder/jt1942_20220819.rbf",
+            "file_size": "10.0"
+        }
     }
-},
-{
-    "model": "api.foo",
-    "pk": 2,
-    "fields": {
-        "name": "aaaaah!"
-    }
-},
-{
-    "model": "api.foo",
-    "pk": 3,
-    "fields": {
-        "name": "aaaaarghhh!"
-    }
-}
 ]
