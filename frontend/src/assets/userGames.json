@@ -1,0 +1,26 @@
+[
+    {
+        "gameTitle": "Donkey Kong",
+        "gamePlatform": "Arcade",
+        "boxart": "https://upload.wikimedia.org/wikipedia/en/1/14/Donkey_Kong_flier.jpg",
+        "releaseYear": 1981
+    },
+    {
+        "gameTitle": "Mario Bros.",
+        "gamePlatform": "Arcade",
+        "boxart": "https://m.media-amazon.com/images/I/713Q2UkGw9L._AC_SY300_SX300_.jpg",
+        "releaseYear": 1983
+    },
+    {
+        "gameTitle": "Final Fantasy VI",
+        "gamePlatform": "SNES",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co31c2.png",
+        "releaseYear": 1994
+    },
+    {
+        "gameTitle": "Mike Tyson's Punch-Out!!",
+        "gamePlatform": "NES",
+        "boxart": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6386.png",
+        "releaseYear": 1987
+    }
+]
