@@ -1,6 +1,6 @@
 <template>
     <div class="site">
-        <NavBar navbartype="login"/>
+      <FAQBar faqbartype="home"/>
         <div class="content">
             <div class="mystuff">
                 <div class="fpga">
@@ -101,12 +101,14 @@
     import allGames from "../assets/catalogGames.json"
     import GameComp from "../components/GameComp.vue";
     import NavBar from "../components/NavBar.vue";
+    import FAQBar from "../components/FAQBar.vue";
 
     export default {
         name: "HomePage",
         components: {
           NavBar,
-          GameComp
+          GameComp,
+          FAQBar
         },
   data () {
     return {
