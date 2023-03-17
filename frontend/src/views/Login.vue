@@ -4,7 +4,7 @@
     <div class="loginbox">
       <form @submit.prevent="submitForm">
         <h3 class="logintitle">Login</h3>
-        <p class="prompt">Email</p>
+        <p class="prompt">Username</p>
         <input type="text" class="userinput" v-model="username">
         <p class="prompt">Password</p>
         <input type="password" class="userinput" v-model="password">
