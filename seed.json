@@ -13,7 +13,7 @@
             "manufacturer": "Sega",
             "category": "Shooter, Horizontal",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
@@ -30,7 +30,7 @@
             "manufacturer": "Capcom",
             "category": "Shooter, Action",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
@@ -47,7 +47,7 @@
             "manufacturer": "Dave Nutting Associates",
             "category": "Racing",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
@@ -64,7 +64,7 @@
             "manufacturer": "Capcom",
             "category": "Arcade Quiz",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
@@ -81,7 +81,7 @@
             "manufacturer": "Capcom",
             "category": "Army, Airforce",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
@@ -98,7 +98,7 @@
             "manufacturer": "Capcom",
             "category": "Army, Airforce",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
@@ -115,501 +115,500 @@
             "manufacturer": "Capcom",
             "category": "Army, Airforce",
             "game_type": "arcade",
-            "file_size": "10.0"
+            "file_size": "0"
         }
     },
     {
-            "model": "games.Games",
-            "pk": 8,
-            "fields": {
-                "game_name": "1943 The Battle of Midway Mark II",
-                "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/1943mii.zip",
-                "file_location": "games/mame/1943mii.zip",
-                "game_year": "1987",
-                "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5wuh.png",
-                "rma_file": "rmaFolder/1943 The Battle of Midway Mark II.mra",
-                "rbf_file": "rbfFolder/jt1943_20220818.rbf",
-                "manufacturer": "Capcom",
-                "category": "Army, Airforce",
-                "game_type": "arcade",
-                "file_size": "xxxx"
+        "model": "games.Games",
+        "pk": 8,
+        "fields": {
+            "game_name": "1943 The Battle of Midway Mark II",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/1943mii.zip",
+            "file_location": "games/mame/1943mii.zip",
+            "game_year": "1987",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5wuh.png",
+            "rma_file": "rmaFolder/1943 The Battle of Midway Mark II.mra",
+            "rbf_file": "rbfFolder/jt1943_20220818.rbf",
+            "manufacturer": "Capcom",
+            "category": "Army, Airforce",
+            "game_type": "arcade",
+            "file_size": "0"
         }
-        },
+    },
     {
-            "model": "games.Games",
-            "pk": 9,
-            "fields": {
-                "game_name": "Action Fighter (World, S16A) [FD1089A 317-0018]",
-                "game_file_link": "https://archive.org/download/mame.0240/afighter.zip",
-                "file_location": "games/mame/afighter.zip",
-                "game_year": "1986",
-                "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqn.png",
-                "rma_file": "rmaFolder/Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-                "rbf_file": "rbfFolder/jts16_20221007.rbf",
-                "manufacturer": "Sega",
-                "category": "Fighter, Action",
-                "game_type": "arcade",
-                "file_size": "xxxx"
-            }
-        },
+        "model": "games.Games",
+        "pk": 9,
+        "fields": {
+            "game_name": "Action Fighter (World, S16A) [FD1089A 317-0018]",
+            "game_file_link": "https://archive.org/download/mame.0240/afighter.zip",
+            "file_location": "games/mame/afighter.zip",
+            "game_year": "1986",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqn.png",
+            "rma_file": "rmaFolder/Action Fighter (World, S16A) [FD1089A 317-0018].mra",
+            "rbf_file": "rbfFolder/jts16_20221007.rbf",
+            "manufacturer": "Sega",
+            "category": "Fighter, Action",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
     {
-            "model": "games.Games",
-            "pk": 10,
-            "fields": {
-                "game_name": "Air Duel (Japan, M72 hardware)",
-                "game_file_link": "https://archive.org/download/mame.0240/airduel.zip",
-                "file_location": "games/mame/airduel.zip",
-                "game_year": "1990",
-                "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vv9.png",
-                "rma_file": "rmaFolder/Air Duel (Japan, M72 hardware).mra",
-                "rbf_file": "rbfFolder/IremM72_20220912.rbf",
-                "manufacturer": "Irem",
-                "category": "Shooter",
-                "game_type": "arcade",
-                "file_size": "xxxx"
-            }
-        },
+        "model": "games.Games",
+        "pk": 10,
+        "fields": {
+            "game_name": "Air Duel (Japan, M72 hardware)",
+            "game_file_link": "https://archive.org/download/mame.0240/airduel.zip",
+            "file_location": "games/mame/airduel.zip",
+            "game_year": "1990",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vv9.png",
+            "rma_file": "rmaFolder/Air Duel (Japan, M72 hardware).mra",
+            "rbf_file": "rbfFolder/IremM72_20220912.rbf",
+            "manufacturer": "Irem",
+            "category": "Shooter",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
     {
-            "model": "games.Games",
-            "pk": 11,
-            "fields": {
-                "game_name": "Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection]",
-                "game_file_link": "https://archive.org/download/mame.0240/alexkidd.zip",
-                "file_location": "games/mame/alexkidd.zip",
-                "game_year": "1990",
-                "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w78.png",
-                "rma_file": "rmaFolder/Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection].mra",
-                "rbf_file": "rbfFolder/jts16_20221007.rbf",
-                "manufacturer": "Sega",
-                "category": "Platform",
-                "game_type": "arcade",
-                "file_size": "xxxx"
-            }
-        },
+        "model": "games.Games",
+        "pk": 11,
+        "fields": {
+            "game_name": "Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection]",
+            "game_file_link": "https://archive.org/download/mame.0240/alexkidd.zip",
+            "file_location": "games/mame/alexkidd.zip",
+            "game_year": "1990",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w78.png",
+            "rma_file": "rmaFolder/Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection].mra",
+            "rbf_file": "rbfFolder/jts16_20221007.rbf",
+            "manufacturer": "Sega",
+            "category": "Platform",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
     {
-            "model": "games.Games",
-            "pk": 12,
-            "fields": {
-                "game_name": "Ali Baba and 40 Thieves",
-                "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/alibaba.zip",
-                "file_location": "games/mame/alibaba.zip",
-                "game_year": "1982",
-                "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co66jy.png",
-                "rma_file": "rmaFolder/Ali Baba and 40 Thieves.mra",
-                "rbf_file": "rbfFolder/Pacman_20210915.rbf",
-                "manufacturer": "Sega",
-                "category": "Maze",
-                "game_type": "arcade",
-                "file_size": "xxxx"
-            }
-        },
-        {
-                "model": "games.Games",
-                "pk": 13,
-                "fields": {
-                    "game_name": "Alien Arena (Stargate upgrade)",
-                    "game_file_link": "https://archive.org/download/MAME218RomsOnlyMerged/MAME%200.218%20ROMs%20%28merged%29.zip/alienar.zip",
-                    "file_location": "games/mame/alienar.zip",
-                    "game_year": "2004",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2pey.png",
-                    "rma_file": "rmaFolder/AAlien Arena (Stargate upgrade).mra",
-                    "rbf_file": "rbfFolder/Robotron_20211007.rbf",
-                    "manufacturer": "Duncan Brown<",
-                    "category": "Arena",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 14,
-                "fields": {
-                    "game_name": "Alien Syndrome (set 4, System 16B, unprotected)",
-                    "game_file_link": "https://archive.org/download/mame.0240/aliensyn.zip",
-                    "file_location": "games/mame/aliensyn.zip",
-                    "game_year": "1986",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/n6bhjbngpomrowus4sgx.png",
-                    "rma_file": "rmaFolder/Alien Syndrome (set 4, System 16B, unprotected).mra",
-                    "rbf_file": "rbfFolder/jts16b_20221007.rbf",
-                    "manufacturer": "Sega",
-                    "category": "Shooter, Action",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 15,
-                "fields": {
-                    "game_name": "Amazing Maze",
-                    "game_file_link": "https://archive.org/download/mame.0240/amazon.zip",
-                    "file_location": "games/mame/maze.zip",
-                    "game_year": "1976",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/bj9is2kiojbsu0dmmpns.png",
-                    "rma_file": "rmaFolder/Amazing Maze.mra",
-                    "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
-                    "manufacturer": "Midway",
-                    "category": "Maze",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 16,
-                "fields": {
-                    "game_name": "Amidar (Scramble)",
-                    "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/amidar.zip",
-                    "file_location": "games/mame/amidar.zip",
-                    "game_year": "1981",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/gajecwckf7i6jgvknfns.png",
-                    "rma_file": "rmaFolder/Amidar (Scramble)mra",
-                    "rbf_file": "rbfFolder/Scramble_20210915.rbf",
-                    "manufacturer": "Konami",
-                    "category": "Maze",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 17,
-                "fields": {
-                    "game_name": "Arkanoid (W)",
-                    "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/arkanoid.zip",
-                    "file_location": "games/mame/arkanoid.zip",
-                    "game_year": "1986",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20ec.png",
-                    "rma_file": "rmaFolder/Arkanoid (W).mra",
-                    "rbf_file": "rbfFolder/Arkanoid_20220521.rbf",
-                    "manufacturer": "Taito",
-                    "category": "Ball and Paddle",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 18,
-                "fields": {
-                    "game_name": "Armed F (Japan)",
-                    "game_file_link": "https://archive.org/download/mame.0240/armedf.zip",
-                    "file_location": "games/mame/armedf.zip",
-                    "game_year": "1988",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/juuymn4yczmp1sfzysvm.png",
-                    "rma_file": "rmaFolder/Armed F (Japan).mra",
-                    "rbf_file": "rbfFolder/armedf_20221013.rbf",
-                    "manufacturer": "Nichibutsu",
-                    "category": "Shoot 'em up",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 19,
-                "fields": {
-                    "game_name": "Armored Car",
-                    "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/armorcar.zip",
-                    "file_location": "games/mame/armorcar.zip",
-                    "game_year": "1981",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3xtm.png",
-                    "rma_file": "rmaFolder/Armored Car.mra",
-                    "rbf_file": "rbfFolder/Scramble_20210915.rbf",
-                    "manufacturer": "Stern",
-                    "category": "Maze",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 20,
-                "fields": {
-                    "game_name": "Armored Warriors (Euro 941024)",
-                    "game_file_link": "https://archive.org/download/mame.0229/armwar.zip, https://archive.org/download/mame.0229/qsound.zip",
-                    "file_location": "games/mame/armwar.zip, games/mame/qsound.zip",
-                    "game_year": "1994",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co22y9.png",
-                    "rma_file": "rmaFolder/Armored Warriors (Euro 941024).mra",
-                    "rbf_file": "rbfFolder/jtcps2_20220819.rbf",
-                    "manufacturer": "Capcom",
-                    "category": "Fighter",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 21,
-                "fields": {
-                    "game_name": "Tron",
-                    "game_file_link": "https://archive.org/download/hbmame0217/tron.zip, https://archive.org/download/MAME218RomsOnlyMerged/MAME%200.218%20ROMs%20%28merged%29.zip/tron.zip",
-                    "file_location": "games/hbmame/tron.zip, games/mame/tron.zip",
-                    "game_year": "1982",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/qyxpiocemywyftisivj7.png",
-                    "rma_file": "rmaFolder/Tron.mra",
-                    "rbf_file": "rbfFolder/MCR2_20210114.rbf",
-                    "manufacturer": "Midway",
-                    "category": "Shooter, Multidirectional",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 22,
-                "fields": {
-                    "game_name": "Asteroids Deluxe",
-                    "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/astdelux.zip",
-                    "file_location": "games/mame/astdelux.zip",
-                    "game_year": "1980",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3gcf.png",
-                    "rma_file": "rmaFolder/Asteroids Deluxe.mra",
-                    "rbf_file": "rbfFolder/AsteroidsDeluxe_20220313.rbf",
-                    "manufacturer": "Atari",
-                    "category": "Space, Asteroids, Fighter",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 23,
-                "fields": {
-                    "game_name": "Asteroids",
-                    "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/asteroid.zip",
-                    "file_location": "games/mame/asteroid.zip",
-                    "game_year": "1979",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co31lr.png",
-                    "rma_file": "rmaFolder/Asteroids.mra",
-                    "rbf_file": "rbfFolder/Asteroids_20220313.rbf",
-                    "manufacturer": "Atari",
-                    "category": "Space, Asteroids, Fighter",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 24,
-                "fields": {
-                    "game_name": "Athena",
-                    "game_file_link": "https://archive.org/download/mame.0240/athena.zip",
-                    "file_location": "games/mame/athena.zip",
-                    "game_year": "1986",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2oiw.png",
-                    "rma_file": "rmaFolder/Athena.mra",
-                    "rbf_file": "rbfFolder/Athena_20220810.rbf",
-                    "manufacturer": "SNK",
-                    "category": "Action",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 25,
-                "fields": {
-                    "game_name": "Attack Force",
-                    "game_file_link": "https://archive.org/download/mame.0240/attackfc.zip",
-                    "file_location": "games/mame/attackfc.zip",
-                    "game_year": "1980",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2r2u.png",
-                    "rma_file": "rmaFolder/Attack Force.mra",
-                    "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
-                    "manufacturer": "Electronic Games Systems",
-                    "category": "Shooter, Gallery",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 26,
-                "fields": {
-                    "game_name": "Aurail (set 3, US) (unprotected)",
-                    "game_file_link": "https://archive.org/download/mame.0240/aurail.zip",
-                    "file_location": "games/mame/aurail.zip",
-                    "game_year": "1990",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5otv.png",
-                    "rma_file": "rmaFolder/Aurail (set 3, US) (unprotected).mra",
-                    "rbf_file": "rbfFolder/jts16b_20221007.rbf",
-                    "manufacturer": "Sega, Westone",
-                    "category": "Shooter",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 27,
-                "fields": {
-                    "game_name": "Azurian Attack",
-                    "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/azurian.zip",
-                    "file_location": "games/mame/azurian.zip",
-                    "game_year": "1982",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/ma4ez7c1iitsoxziw4bg.png",
-                    "rma_file": "rmaFolder/Azurian Attack.mra",
-                    "rbf_file": "rbfFolder/Galaxian_20210920.rbf",
-                    "manufacturer": "Rait Electronics Ltd",
-                    "category": "Shooter, Multidirectional",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 28,
-                "fields": {
-                    "game_name": "Altered Beast (set 8) (8751 317-0078)",
-                    "game_file_link": "https://archive.org/download/mame.0240/altbeast.zip",
-                    "file_location": "games/mame/altbeast.zip",
-                    "game_year": "1988",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iwa.png",
-                    "rma_file": "rmaFolder/Altered Beast (set 8) (8751 317-0078).mra",
-                    "rbf_file": "rbfFolder/jts16b_20221007.rbf",
-                    "manufacturer": "Sega",
-                    "category": "Action",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 29,
-                "fields": {
-                    "game_name": "Alien vs. Predator (Euro 940520)",
-                    "game_file_link": "https://archive.org/download/mame.0229/avsp.zip, https://archive.org/download/mame.0229/qsound.zip",
-                    "file_location": "games/mame/avsp.zip, games/mame/qsound.zip",
-                    "game_year": "1988",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a29.png",
-                    "rma_file": "rmaFolder/Alien vs. Predator (Euro 940520).mra",
-                    "rbf_file": "rbfFolder/jtcps2_20220819.rbf",
-                    "manufacturer": "Capcom",
-                    "category": "Action",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-                }
-            },
-        {
-                "model": "games.Games",
-                "pk": 30,
-                "fields": {
-                    "game_name": "Time Pilot",
-                    "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/timeplt.zip",
-                    "file_location": "games/mame/timeplt.zip",
-                    "game_year": "1982",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/be9f4huo57dzcgovsvkj.png",
-                    "rma_file": "rmaFolder/Time Pilot.mra",
-                    "rbf_file": "rbfFolder/TimePilot_20220526.rbf",
-                    "manufacturer": "Konami",
-                    "category": "Shooter, Multidirectional",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            },
-        {
-                "model": "games.Games",
-                "pk": 31,
-                "fields": {
-                    "game_name": "Jailbreak",
-                    "game_file_link": "https://archive.org/download/MAME224RomsOnlyMerged/jailbrek.zip",
-                    "file_location": "games/mame/jailbrek.zip",
-                    "game_year": "1986",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ubf.png",
-                    "rma_file": "rmaFolder/Jailbreak.mra",
-                    "rbf_file": "rbfFolder/Jailbreak_20220526.rbf",
-                    "manufacturer": "Konami",
-                    "category": "Army, Fighter",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            },
-        {
-                "model": "games.Games",
-                "pk": 32,
-                "fields": {
-                    "game_name": "Pac-Man (Midway)",
-                    "game_file_link": "https://archive.org/download/hbmame0220/puckman.zip, https://archive.org/download/mame.0240/puckman.zip",
-                    "file_location": "games/hbmame/puckman.zip, games/mame/puckman.zip",
-                    "game_year": "1980",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z38.png",
-                    "rma_file": "rmaFolder/Pac-Man (Midway).mra",
-                    "rbf_file": "rbfFolder/Pacman_20210915.rbf",
-                    "manufacturer": "Namco, Midway",
-                    "category": "Maze",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            },
-        {
-                "model": "games.Games",
-                "pk": 33,
-                "fields": {
-                    "game_name": "Robocop (World revision 4)",
-                    "game_file_link": "https://archive.org/download/mame.0240/robocop.zip",
-                    "file_location": "games/mame/robocop.zip",
-                    "game_year": "1988",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4oki.png",
-                    "rma_file": "rmaFolder/Robocop (World revision 4).mra",
-                    "rbf_file": "rbfFolder/jtcop_20220819.rbf",
-                    "manufacturer": "Data East Corporation",
-                    "category": "Adventure",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            },
-        {
-                "model": "games.Games",
-                "pk": 34,
-                "fields": {
-                    "game_name": "Space Invaders",
-                    "game_file_link": "https://archive.org/download/mame.0240/invaders.zip",
-                    "file_location": "games/mame/invaders.zip",
-                    "game_year": "1978",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5kkf.png",
-                    "rma_file": "rmaFolder/Space Invaders.mra",
-                    "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
-                    "manufacturer": "Taito",
-                    "category": "Shooter, Gallery",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            },
-        {
-                "model": "games.Games",
-                "pk": 35,
-                "fields": {
-                    "game_name": "Street Fighter (US, set 1)",
-                    "game_file_link": "https://archive.org/download/mame.0240/sf.zip",
-                    "file_location": "games/mame/sf.zip",
-                    "game_year": "1987",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w1w.png",
-                    "rma_file": "rmaFolder/Street Fighter (US, set 1).mra",
-                    "rbf_file": "rbfFolder/jtsf_20220818.rbf",
-                    "manufacturer": "Capcom M68000",
-                    "category": "Fighting",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            },
-        {
-                "model": "games.Games",
-                "pk": 36,
-                "fields": {
-                    "game_name": "Tetris (Cocktail, Set 1)",
-                    "game_file_link": "https://archive.org/download/MAME218RomsOnlyMerged/MAME%200.218%20ROMs%20%28merged%29.zip/atetris.zip",
-                    "file_location": "games/mame/atetris.zip",
-                    "game_year": "1989",
-                    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ufl.png",
-                    "rma_file": "rmaFolder/Tetris (Cocktail, Set 1).mra",
-                    "rbf_file": "rbfFolder/AtariTetris_20210405.rbf",
-                    "manufacturer": "Atari",
-                    "category": "Puzzle",
-                    "game_type": "arcade",
-                    "file_size": "xxxx"
-               }
-            }
-        ]
-
+        "model": "games.Games",
+        "pk": 12,
+        "fields": {
+            "game_name": "Ali Baba and 40 Thieves",
+            "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/alibaba.zip",
+            "file_location": "games/mame/alibaba.zip",
+            "game_year": "1982",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co66jy.png",
+            "rma_file": "rmaFolder/Ali Baba and 40 Thieves.mra",
+            "rbf_file": "rbfFolder/Pacman_20210915.rbf",
+            "manufacturer": "Sega",
+            "category": "Maze",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 13,
+        "fields": {
+            "game_name": "Alien Arena (Stargate upgrade)",
+            "game_file_link": "https://archive.org/download/MAME218RomsOnlyMerged/MAME%200.218%20ROMs%20%28merged%29.zip/alienar.zip",
+            "file_location": "games/mame/alienar.zip",
+            "game_year": "2004",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2pey.png",
+            "rma_file": "rmaFolder/AAlien Arena (Stargate upgrade).mra",
+            "rbf_file": "rbfFolder/Robotron_20211007.rbf",
+            "manufacturer": "Duncan Brown<",
+            "category": "Arena",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 14,
+        "fields": {
+            "game_name": "Alien Syndrome (set 4, System 16B, unprotected)",
+            "game_file_link": "https://archive.org/download/mame.0240/aliensyn.zip",
+            "file_location": "games/mame/aliensyn.zip",
+            "game_year": "1986",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/n6bhjbngpomrowus4sgx.png",
+            "rma_file": "rmaFolder/Alien Syndrome (set 4, System 16B, unprotected).mra",
+            "rbf_file": "rbfFolder/jts16b_20221007.rbf",
+            "manufacturer": "Sega",
+            "category": "Shooter, Action",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 15,
+        "fields": {
+            "game_name": "Amazing Maze",
+            "game_file_link": "https://archive.org/download/mame.0240/amazon.zip",
+            "file_location": "games/mame/maze.zip",
+            "game_year": "1976",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/bj9is2kiojbsu0dmmpns.png",
+            "rma_file": "rmaFolder/Amazing Maze.mra",
+            "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
+            "manufacturer": "Midway",
+            "category": "Maze",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 16,
+        "fields": {
+            "game_name": "Amidar (Scramble)",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/amidar.zip",
+            "file_location": "games/mame/amidar.zip",
+            "game_year": "1981",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/gajecwckf7i6jgvknfns.png",
+            "rma_file": "rmaFolder/Amidar (Scramble)mra",
+            "rbf_file": "rbfFolder/Scramble_20210915.rbf",
+            "manufacturer": "Konami",
+            "category": "Maze",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 17,
+        "fields": {
+            "game_name": "Arkanoid (W)",
+            "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/arkanoid.zip",
+            "file_location": "games/mame/arkanoid.zip",
+            "game_year": "1986",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20ec.png",
+            "rma_file": "rmaFolder/Arkanoid (W).mra",
+            "rbf_file": "rbfFolder/Arkanoid_20220521.rbf",
+            "manufacturer": "Taito",
+            "category": "Ball and Paddle",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 18,
+        "fields": {
+            "game_name": "Armed F (Japan)",
+            "game_file_link": "https://archive.org/download/mame.0240/armedf.zip",
+            "file_location": "games/mame/armedf.zip",
+            "game_year": "1988",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/juuymn4yczmp1sfzysvm.png",
+            "rma_file": "rmaFolder/Armed F (Japan).mra",
+            "rbf_file": "rbfFolder/armedf_20221013.rbf",
+            "manufacturer": "Nichibutsu",
+            "category": "Shoot 'em up",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 19,
+        "fields": {
+            "game_name": "Armored Car",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/armorcar.zip",
+            "file_location": "games/mame/armorcar.zip",
+            "game_year": "1981",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3xtm.png",
+            "rma_file": "rmaFolder/Armored Car.mra",
+            "rbf_file": "rbfFolder/Scramble_20210915.rbf",
+            "manufacturer": "Stern",
+            "category": "Maze",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 20,
+        "fields": {
+            "game_name": "Armored Warriors (Euro 941024)",
+            "game_file_link": "https://archive.org/download/mame.0229/armwar.zip, https://archive.org/download/mame.0229/qsound.zip",
+            "file_location": "games/mame/armwar.zip, games/mame/qsound.zip",
+            "game_year": "1994",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co22y9.png",
+            "rma_file": "rmaFolder/Armored Warriors (Euro 941024).mra",
+            "rbf_file": "rbfFolder/jtcps2_20220819.rbf",
+            "manufacturer": "Capcom",
+            "category": "Fighter",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 21,
+        "fields": {
+            "game_name": "Tron",
+            "game_file_link": "https://archive.org/download/hbmame0217/tron.zip, https://archive.org/download/MAME218RomsOnlyMerged/MAME%200.218%20ROMs%20%28merged%29.zip/tron.zip",
+            "file_location": "games/hbmame/tron.zip, games/mame/tron.zip",
+            "game_year": "1982",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/qyxpiocemywyftisivj7.png",
+            "rma_file": "rmaFolder/Tron.mra",
+            "rbf_file": "rbfFolder/MCR2_20210114.rbf",
+            "manufacturer": "Midway",
+            "category": "Shooter, Multidirectional",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 22,
+        "fields": {
+            "game_name": "Asteroids Deluxe",
+            "game_file_link": "https://archive.org/download/MAME216RomsOnlyMerged/astdelux.zip",
+            "file_location": "games/mame/astdelux.zip",
+            "game_year": "1980",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3gcf.png",
+            "rma_file": "rmaFolder/Asteroids Deluxe.mra",
+            "rbf_file": "rbfFolder/AsteroidsDeluxe_20220313.rbf",
+            "manufacturer": "Atari",
+            "category": "Space, Asteroids, Fighter",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 23,
+        "fields": {
+            "game_name": "Asteroids",
+            "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/asteroid.zip",
+            "file_location": "games/mame/asteroid.zip",
+            "game_year": "1979",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co31lr.png",
+            "rma_file": "rmaFolder/Asteroids.mra",
+            "rbf_file": "rbfFolder/Asteroids_20220313.rbf",
+            "manufacturer": "Atari",
+            "category": "Space, Asteroids, Fighter",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 24,
+        "fields": {
+            "game_name": "Athena",
+            "game_file_link": "https://archive.org/download/mame.0240/athena.zip",
+            "file_location": "games/mame/athena.zip",
+            "game_year": "1986",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2oiw.png",
+            "rma_file": "rmaFolder/Athena.mra",
+            "rbf_file": "rbfFolder/Athena_20220810.rbf",
+            "manufacturer": "SNK",
+            "category": "Action",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 25,
+        "fields": {
+            "game_name": "Attack Force",
+            "game_file_link": "https://archive.org/download/mame.0240/attackfc.zip",
+            "file_location": "games/mame/attackfc.zip",
+            "game_year": "1980",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2r2u.png",
+            "rma_file": "rmaFolder/Attack Force.mra",
+            "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
+            "manufacturer": "Electronic Games Systems",
+            "category": "Shooter, Gallery",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 26,
+        "fields": {
+            "game_name": "Aurail (set 3, US) (unprotected)",
+            "game_file_link": "https://archive.org/download/mame.0240/aurail.zip",
+            "file_location": "games/mame/aurail.zip",
+            "game_year": "1990",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5otv.png",
+            "rma_file": "rmaFolder/Aurail (set 3, US) (unprotected).mra",
+            "rbf_file": "rbfFolder/jts16b_20221007.rbf",
+            "manufacturer": "Sega, Westone",
+            "category": "Shooter",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 27,
+        "fields": {
+            "game_name": "Azurian Attack",
+            "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/azurian.zip",
+            "file_location": "games/mame/azurian.zip",
+            "game_year": "1982",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/ma4ez7c1iitsoxziw4bg.png",
+            "rma_file": "rmaFolder/Azurian Attack.mra",
+            "rbf_file": "rbfFolder/Galaxian_20210920.rbf",
+            "manufacturer": "Rait Electronics Ltd",
+            "category": "Shooter, Multidirectional",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 28,
+        "fields": {
+            "game_name": "Altered Beast (set 8) (8751 317-0078)",
+            "game_file_link": "https://archive.org/download/mame.0240/altbeast.zip",
+            "file_location": "games/mame/altbeast.zip",
+            "game_year": "1988",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iwa.png",
+            "rma_file": "rmaFolder/Altered Beast (set 8) (8751 317-0078).mra",
+            "rbf_file": "rbfFolder/jts16b_20221007.rbf",
+            "manufacturer": "Sega",
+            "category": "Action",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 29,
+        "fields": {
+            "game_name": "Alien vs. Predator (Euro 940520)",
+            "game_file_link": "https://archive.org/download/mame.0229/avsp.zip, https://archive.org/download/mame.0229/qsound.zip",
+            "file_location": "games/mame/avsp.zip, games/mame/qsound.zip",
+            "game_year": "1988",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a29.png",
+            "rma_file": "rmaFolder/Alien vs. Predator (Euro 940520).mra",
+            "rbf_file": "rbfFolder/jtcps2_20220819.rbf",
+            "manufacturer": "Capcom",
+            "category": "Action",
+            "game_type": "arcade",
+            "file_size": "0"
+        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 30,
+        "fields": {
+            "game_name": "Time Pilot",
+            "game_file_link": "https://archive.org/download/MAME220RomsOnlyMerged/timeplt.zip",
+            "file_location": "games/mame/timeplt.zip",
+            "game_year": "1982",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/be9f4huo57dzcgovsvkj.png",
+            "rma_file": "rmaFolder/Time Pilot.mra",
+            "rbf_file": "rbfFolder/TimePilot_20220526.rbf",
+            "manufacturer": "Konami",
+            "category": "Shooter, Multidirectional",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    },
+    {
+        "model": "games.Games",
+        "pk": 31,
+        "fields": {
+            "game_name": "Jailbreak",
+            "game_file_link": "https://archive.org/download/MAME224RomsOnlyMerged/jailbrek.zip",
+            "file_location": "games/mame/jailbrek.zip",
+            "game_year": "1986",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ubf.png",
+            "rma_file": "rmaFolder/Jailbreak.mra",
+            "rbf_file": "rbfFolder/Jailbreak_20220526.rbf",
+            "manufacturer": "Konami",
+            "category": "Army, Fighter",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    },
+    {
+        "model": "games.Games",
+        "pk": 32,
+        "fields": {
+            "game_name": "Pac-Man (Midway)",
+            "game_file_link": "https://archive.org/download/hbmame0220/puckman.zip, https://archive.org/download/mame.0240/puckman.zip",
+            "file_location": "games/hbmame/puckman.zip, games/mame/puckman.zip",
+            "game_year": "1980",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z38.png",
+            "rma_file": "rmaFolder/Pac-Man (Midway).mra",
+            "rbf_file": "rbfFolder/Pacman_20210915.rbf",
+            "manufacturer": "Namco, Midway",
+            "category": "Maze",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    },
+    {
+        "model": "games.Games",
+        "pk": 33,
+        "fields": {
+            "game_name": "Robocop (World revision 4)",
+            "game_file_link": "https://archive.org/download/mame.0240/robocop.zip",
+            "file_location": "games/mame/robocop.zip",
+            "game_year": "1988",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4oki.png",
+            "rma_file": "rmaFolder/Robocop (World revision 4).mra",
+            "rbf_file": "rbfFolder/jtcop_20220819.rbf",
+            "manufacturer": "Data East Corporation",
+            "category": "Adventure",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    },
+    {
+        "model": "games.Games",
+        "pk": 34,
+        "fields": {
+            "game_name": "Space Invaders",
+            "game_file_link": "https://archive.org/download/mame.0240/invaders.zip",
+            "file_location": "games/mame/invaders.zip",
+            "game_year": "1978",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5kkf.png",
+            "rma_file": "rmaFolder/Space Invaders.mra",
+            "rbf_file": "rbfFolder/SpaceInvaders_20211201.rbf",
+            "manufacturer": "Taito",
+            "category": "Shooter, Gallery",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    },
+    {
+        "model": "games.Games",
+        "pk": 35,
+        "fields": {
+            "game_name": "Street Fighter (US, set 1)",
+            "game_file_link": "https://archive.org/download/mame.0240/sf.zip",
+            "file_location": "games/mame/sf.zip",
+            "game_year": "1987",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w1w.png",
+            "rma_file": "rmaFolder/Street Fighter (US, set 1).mra",
+            "rbf_file": "rbfFolder/jtsf_20220818.rbf",
+            "manufacturer": "Capcom M68000",
+            "category": "Fighting",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    },
+    {
+        "model": "games.Games",
+        "pk": 36,
+        "fields": {
+            "game_name": "Tetris (Cocktail, Set 1)",
+            "game_file_link": "https://archive.org/download/MAME218RomsOnlyMerged/MAME%200.218%20ROMs%20%28merged%29.zip/atetris.zip",
+            "file_location": "games/mame/atetris.zip",
+            "game_year": "1989",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ufl.png",
+            "rma_file": "rmaFolder/Tetris (Cocktail, Set 1).mra",
+            "rbf_file": "rbfFolder/AtariTetris_20210405.rbf",
+            "manufacturer": "Atari",
+            "category": "Puzzle",
+            "game_type": "arcade",
+            "file_size": "0"
+       }
+    }
+]
