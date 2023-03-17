@@ -13,7 +13,7 @@ class User(AbstractUser):
     account_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     birth_date = models.DateField(null=True, blank=True)
     avatar = models.ImageField(upload_to ='avatars/', null=True, blank=True)
-    game = models.ManyToManyField('games.Games')
+    game = models.ManyToManyField('games.Games', blank=True)
     def __str__(self):
         return self.username
 
