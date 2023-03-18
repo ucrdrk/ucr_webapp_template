@@ -97,30 +97,35 @@
 </style>
 
 <script>
-    import myGames from "../assets/userGames.json"
-    import allGames from "../assets/catalogGames.json"
-    import GameComp from "../components/GameComp.vue";
-    import NavBar from "../components/NavBar.vue";
+  import myGames from "../assets/userGames.json"
+  import allGames from "../assets/catalogGames.json"
+  import GameComp from "../components/GameComp.vue";
+  import NavBar from "../components/NavBar.vue";
 
-    export default {
-        name: "HomePage",
-        components: {
-          NavBar,
-          GameComp
+  export default {
+    name: "HomePage",
+    components: {
+      NavBar,
+      GameComp
         },
-  data () {
-    return {
-      values: [],
-      games: myGames,
-      allGames: allGames
+    data () {
+      return {
+        games: myGames,
+        allGames: allGames
+      }
+    },
+    methods: {
+      getAllGames(){
+        this.$http.get('/api/games/all-games').then((response) =>{
+          this.allGames = response.data.results
+        })
+        .catch((err) =>{
+          console.log(err)
+        })
+      }
+    },
+    created(){
+      this.getAllGames()
     }
-  },
-  created: function () {
-    this.$http.get('/api/foos/').then((response) => {
-      console.log(response.data)
-      this.values = response.data
-    })
-    console.log("Created")
-  }
 };
 </script>

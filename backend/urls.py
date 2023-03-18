@@ -26,5 +26,6 @@ urlpatterns = [
 
     #REST
     path('api/account/', include('account.api.urls', 'account_api')),
+    path('api/games/', include('games.api.urls', 'game_api'))
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
