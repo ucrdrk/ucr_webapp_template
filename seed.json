@@ -610,5 +610,22 @@
             "game_type": "arcade",
             "file_size": "0"
        }
+    },
+    {
+        "model": "games.Games",
+        "pk": 37,
+        "fields": {
+            "game_name": "Megaman Zero 4 (USA)",
+            "game_file_link": "EMPTY",
+            "file_location": "EMPTY",
+            "game_year": "1989",
+            "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ufl.png",
+            "rma_file": "games/GBA/Megaman Zero 4 (USA).zip",
+            "rbf_file": "rbfFolder/Megaman Zero 4 (USA).zip",
+            "manufacturer": "Atari",
+            "category": "Puzzle",
+            "game_type": "core",
+            "file_size": "0"
+       }
     }
 ]
