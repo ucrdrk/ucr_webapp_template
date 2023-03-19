@@ -40,7 +40,7 @@ def registration_view(request):
 
 
 
-@csrf_exempt
+@api_view(['GET',])
 def userGameAPI(request,id=0):
     if request.method=='GET':
         #If the payload from the script does no match then it blows up the code. fix later on
@@ -70,25 +70,22 @@ def userGameAPI(request,id=0):
 @csrf_exempt
 def UserSyncAPI(request,id=0):
     if request.method=='GET':
-        #If the payload from the script does no match then it blows up the code. fix later on
+        # #If the payload from the script does no match then it blows up the code. fix later on
         user_id = request.GET['value']
         
         #Checks to see if the value is an actual user
         #need to make sure its length is 26 characters. if its shorter or longer the function blows up
         users = User.objects.all().filter(account_id=user_id)
         user_serializer = UserSyncSerializer(users,many=True)
-        data = user_serializer.data
-        
+        data = user_serializer.data    
         return JsonResponse(data, safe=False)
+    
+    elif request.method=='PUT':
+        user_data = JSONParser().parse((request))
 
-
-
-'''
-@csrf_exempt
-def userGameAPI(request):
-    if request.method=='GET':
-        id = request.GET(user_id)
-        users = User.objects.get(usename=id) 
-        user_serializer = UserGameSerializer(users,many=True)
-        return id
-#'''
+        user=User.objects.get(account_id=user_data['value'])
+        user_serializer = UserSyncSerializer(user,data=user_data)
+        if user_serializer.is_valid():
+            user_serializer.save()
+            return JsonResponse("Update Successfully",safe=False)
+        return JsonResponse("Failed",safe=False)
