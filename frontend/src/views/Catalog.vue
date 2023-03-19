@@ -154,6 +154,7 @@
       }
     },
     methods: {
+      
       getAllGames(){
         this.$http.get('/api/games/all-games').then((response) =>{
           console.log(response)
