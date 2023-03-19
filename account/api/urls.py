@@ -2,7 +2,7 @@ from django.urls import path
 from django.conf.urls import url
 from account.api import views
 from account.api.views import(
-    registration_view,userGameAPI
+    registration_view,userGameAPI,UserSyncAPI
 )
 
 from rest_framework.authtoken.views import obtain_auth_token
