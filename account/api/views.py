@@ -14,7 +14,7 @@ from django.http import FileResponse
 
 
 from account.models import User
-from account.api.serializers import UserGameSerializer
+from account.api.serializers import UserGameSerializer,UserSyncSerializer
 from django.core.files.storage import default_storage
 
 
@@ -65,6 +65,22 @@ def userGameAPI(request,id=0):
 
         return JsonResponse(data[0]['game'], safe=False)
         #return JsonResponse(data[0]['game'][1]['rma_file'], safe=False)
+
+
+@csrf_exempt
+def UserSyncAPI(request,id=0):
+    if request.method=='GET':
+        #If the payload from the script does no match then it blows up the code. fix later on
+        user_id = request.GET['value']
+        
+        #Checks to see if the value is an actual user
+        #need to make sure its length is 26 characters. if its shorter or longer the function blows up
+        users = User.objects.all().filter(account_id=user_id)
+        user_serializer = UserSyncSerializer(users,many=True)
+        data = user_serializer.data
+        
+        return JsonResponse(data, safe=False)
+
 
 
 '''
