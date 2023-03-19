@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <CatBar catbartype="home"/>
+    <NavBar navbartype="catalog"/>
       <div class="content">
         <div class="overview" >
           <h1 class="overviewtitle" id="box">Overview</h1>
@@ -84,12 +84,10 @@
 
 <script>
  import NavBar from "../components/NavBar.vue";
- import CatBar from "../components/CatBar.vue";
  export default {
   name: "HomePage",
         components: {
-          NavBar,
-          CatBar
+          NavBar
         }
  }
 </script>

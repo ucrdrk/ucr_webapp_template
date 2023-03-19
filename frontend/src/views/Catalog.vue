@@ -1,6 +1,6 @@
 <template>
     <div class="site">
-      <FAQBar faqbartype="home"/>
+      <NavBar navbartype="faq"/>
         <div class="content">
             <div class="mystuff">
                 <div class="fpga">
@@ -12,7 +12,7 @@
                     </div>
                     <div class="sendbutton">Send games to board</div>
                     <div class="filter">
-                      <label class="title" for="menu">Select a filter:</label>
+                      <label class="labeltitle" for="menu">Select a filter:</label>
                       <div class="filterops">
                        <select id="menu" name="menu">
                          <option value="option4">None</option>
@@ -55,7 +55,7 @@
 .filter{
   display: flex;
   flex-direction: row;
-  background-color: #6D8B9C;
+  /* background-color: #6D8B9C; */
   color: white;
   height: 30px;
   width: 288px;
@@ -64,7 +64,7 @@
   margin-bottom: 10%;
   border-radius: 10px;
 }
-.title{
+.labeltitle{
   display: flex;
   justify-content: top;
   margin-top: 0px;
@@ -176,7 +176,6 @@
     import allGames from "../assets/catalogGames.json"
     import GameComp from "../components/GameComp.vue";
     import NavBar from "../components/NavBar.vue";
-    import FAQBar from "../components/FAQBar.vue";
     var myFunction = function() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
@@ -184,8 +183,7 @@
         name: "HomePage",
         components: {
           NavBar,
-          GameComp,
-          FAQBar
+          GameComp
         },
   data () {
     return {
