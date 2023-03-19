@@ -22,7 +22,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
 .catbar {
     display: flex;
-    flex: 0 0 64px;
+    flex: 0 1 64px;
     justify-content: flex-start;
 }
 .homelink {
@@ -42,17 +42,26 @@ export default {
 }
 .catalog {
     margin: auto 2rem auto auto;
+    justify-self: right;
+    justify-content: right;
+    justify-items: right;
 }
 .button {
     width: 130.67px;
     height: 44px;
-    border: 3px solid #8AB0AB;
-    border-radius: 10px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left:0px;
+    border-right:0px;
+    /* border-bottom: 3px solid #8AB0AB;
+    border-radius: 10px; */
     font-family: 'Inria Sans', sans-serif;
     text-align: center;
     font-size: 16pt; 
     color: #8AB0AB;
     line-height: 44px;
+
+    justify-content: right;
     
 }
 a {

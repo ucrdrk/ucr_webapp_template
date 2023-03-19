@@ -20,7 +20,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
-.catbar {
+.faqbar {
     display: flex;
     flex: 0 0 64px;
     justify-content: flex-start;
@@ -40,19 +40,25 @@ export default {
     margin-bottom: auto;
     color: #8AB0AB;
 }
-.catalog {
+.faq {
     margin: auto 2rem auto auto;
 }
 .button {
     width: 130.67px;
     height: 44px;
-    border: 3px solid #8AB0AB;
-    border-radius: 10px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left:0px;
+    border-right:0px;
+    /* border-bottom: 3px solid #8AB0AB;
+    border-radius: 10px; */
     font-family: 'Inria Sans', sans-serif;
     text-align: center;
     font-size: 16pt; 
     color: #8AB0AB;
     line-height: 44px;
+
+    justify-content: right;
     
 }
 a {
