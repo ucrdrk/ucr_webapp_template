@@ -107,7 +107,7 @@ export default {
           //testing
           //console.log(localStorage.getItem('token'))
           //console.log(this.$store.state.token)
-          this.$router.push('/mainpage')
+          this.$router.push('/catalog')
         })
         .catch(error => {
           console.log(error)

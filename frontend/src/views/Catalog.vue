@@ -23,6 +23,10 @@
                   <GameComp :info="game"/>
                 </div>
               </div>
+              <div class="nextPrev">
+                <p @click="prevAllGames" class="movepage">Prev</p>
+                <p @click="nextAllGames" class="movepage">Next</p>
+              </div>
             </div>
         </div>
     </div>
@@ -78,10 +82,9 @@
 }
 .theList{
   display: grid;
-  grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
-  grid-template-rows: 5fr 5fr 5fr 5fr;
+  grid-template-columns: 5fr 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr 5fr;
   column-gap: 1rem;
-  row-gap: 100px;
   margin: 0 auto;
 }
 .card {
@@ -91,8 +94,17 @@
   margin-bottom: 1rem;
 }
 .catalog {
-  width: 75%;
+  width: 60%;
   margin: auto;
+}
+.nextPrev{
+  display: flex;
+  flex-direction: row;
+  margin: 10px
+}
+.movepage{
+  cursor: pointer;
+  margin: 20px;
 }
 </style>
 
@@ -111,17 +123,52 @@
     data () {
       return {
         games: myGames,
-        allGames: allGames
+        allGames: allGames,
+        nextPageURL: null,
+        prevPageURL: null,
       }
     },
     methods: {
       getAllGames(){
         this.$http.get('/api/games/all-games').then((response) =>{
+          console.log(response)
           this.allGames = response.data.results
+          this.nextPageURL = response.data.next.slice(16)
         })
         .catch((err) =>{
           console.log(err)
         })
+      },
+      nextAllGames(){
+        if(this.nextPageURL != null){
+        this.$http.get(this.nextPageURL).then((response) =>{
+          console.log(response)
+          this.allGames = response.data.results
+          if(response.data.next != null){
+            this.nextPageURL = response.data.next.slice(16)
+          }
+          this.prevPageURL = response.data.previous.slice(16)
+          console.log(this.prevPageURL)
+        })
+        .catch((err) =>{
+          console.log(err)
+        })
+      }
+      }, 
+      prevAllGames(){
+        if(this.prevPageURL != null){
+          this.$http.get(this.prevPageURL).then((response) =>{
+          console.log(response)
+          this.allGames = response.data.results
+          this.nextPageURL = response.data.next.slice(16)
+          if(response.data.previous != null){
+            this.prevPageURL = response.data.previous.slice(16)
+          }
+        })
+        .catch((err) =>{
+          console.log(err)
+        })
+        }
       }
     },
     created(){
