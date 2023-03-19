@@ -9,19 +9,23 @@
             </div>
             <div class="mygames" v-if="!showFullCatalog">
               <div class="switchTitles">
-                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=true">Catalog</h2>
-                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=false">My Games</h2>
+                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=true; getAllGames();">Catalog</h2>
+                <h2 class="switchtitle" @click="showFullCatalog=false">My Games</h2>
               </div>
                 <div class="myList">
-                  <div v-for="game in games" :key="game.id" class="card">
+                  <div v-for="game in allGames" :key="game.id" class="card">
                     <GameComp :info="game"/>
                   </div>
                 </div>
+              <div class="nextPrev">
+                <p @click="prevAllGames" class="movepage">Prev</p>
+                <p @click="nextAllGames" class="movepage">Next</p>
+              </div>
             </div>
             <div class="catalog" v-if="showFullCatalog">
               <div class="switchTitles">
                 <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=true">Catalog</h2>
-                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=false">My Games</h2>
+                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=false; getUserGames();">My Games</h2>
               </div>
               <div class="theList">
                 <div v-for="game in allGames" :key="game.id" class="card">
@@ -101,7 +105,6 @@
   grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr;
   grid-template-rows: 5fr 5fr;
   column-gap: 1rem;
-  row-gap: 250px;
   margin: 0 auto;
 }
 .theList{
@@ -146,7 +149,6 @@
     },
     data () {
       return {
-        games: myGames,
         allGames: allGames,
         nextPageURL: null,
         prevPageURL: null,
@@ -154,7 +156,16 @@
       }
     },
     methods: {
-      
+      getUserGames(){
+        this.$http.get('/api/account/user_game').then((response) =>{
+          console.log(response)
+          this.allGames = response.data.results
+          this.nextPageURL = response.data.next.slice(16)
+        })
+        .catch((err) =>{
+          console.log(err)
+        })
+      },
       getAllGames(){
         this.$http.get('/api/games/all-games').then((response) =>{
           console.log(response)
@@ -199,6 +210,7 @@
     },
     created(){
       this.getAllGames()
+      this.getUserGames()
     }
 };
 </script>
