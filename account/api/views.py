@@ -1,9 +1,14 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny,IsAuthenticated
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.views import APIView
+from rest_framework.generics import ListAPIView
+from rest_framework.authentication import TokenAuthentication
 
-from account.api.serializers import RegistrationSerializer
+from account.api.serializers import RegistrationSerializer, UserGameSerializer
+from games.api.serializers import GamesSerializer
 from rest_framework.authtoken.models import Token
 
 
@@ -40,7 +45,15 @@ def registration_view(request):
             data = serializer.errors
         return Response(data)
 
-
+class UserGameApiView(ListAPIView):
+    serializer_class = GamesSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+    pagination_class = PageNumberPagination
+    def get_queryset(self):
+        user_id = Token.objects.get(key=self.request.auth.key).user_id
+        user = User.objects.get(account_id=user_id)
+        return user.game.all()
 
 @csrf_exempt
 def userGameAPI(request,id=0):

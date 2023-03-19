@@ -119,7 +119,7 @@
     components: {
       NavBar,
       GameComp
-        },
+    },
     data () {
       return {
         games: myGames,
