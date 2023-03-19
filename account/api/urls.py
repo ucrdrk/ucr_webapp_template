@@ -13,6 +13,9 @@ urlpatterns = [
     path('register', registration_view, name = 'register'),
     path('login', obtain_auth_token, name = 'login'),
     url(r'^userGame$',views.userGameAPI),
-    url(r'^userGame/([0-9]+)$',views.userGameAPI)
+    url(r'^userGame/([0-9]+)$',views.userGameAPI),
+    url(r'^UserSync$',views.UserSyncAPI),
+    url(r'^UserSync/([0-9]+)$',views.UserSyncAPI)
+
     #url(r'^userGame/$', userGameAPI, name='userGame')
 ]
