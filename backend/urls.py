@@ -26,7 +26,8 @@ urlpatterns = [
     #when i put it in the backend it worked. made it unique kept getting error
 
     #REST
-     path('api/account/', include('account.api.urls', 'account_api')),
+    path('api/account/', include('account.api.urls', 'account_api')),
+    path('api/games/', include('games.api.urls', 'game_api'))
      #url(r'^', include('account.api.urls'))
     
     
