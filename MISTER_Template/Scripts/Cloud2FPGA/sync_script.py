@@ -19,7 +19,7 @@ ip_addr = get_data("ip_addr.txt")
 global payload 
 user_id = get_data("id_user.txt")
 payload = {'value':user_id}
-payload2 = {'value':'f642b035-f46e-4d34-ae43-6e600fe405dd', 'play_flag':'dsfsd'}
+payload2 = {'value':'f642b035-f46e-4d34-ae43-6e600fe405dd', 'play_flag':'Play megaman'}
 
 
 try:
