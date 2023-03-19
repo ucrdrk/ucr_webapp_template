@@ -20,7 +20,7 @@ from django.http import FileResponse
 
 
 from account.models import User
-from account.api.serializers import UserGameSerializer
+from account.api.serializers import UserGameSerializer,UserSyncSerializer
 from django.core.files.storage import default_storage
 
 
@@ -55,7 +55,7 @@ class UserGameApiView(ListAPIView):
         user = User.objects.get(account_id=user_id)
         return user.game.all()
 
-@csrf_exempt
+@api_view(['GET',])
 def userGameAPI(request,id=0):
     if request.method=='GET':
         #If the payload from the script does no match then it blows up the code. fix later on
@@ -82,12 +82,25 @@ def userGameAPI(request,id=0):
         #return JsonResponse(data[0]['game'][1]['rma_file'], safe=False)
 
 
-'''
 @csrf_exempt
-def userGameAPI(request):
+def UserSyncAPI(request,id=0):
     if request.method=='GET':
-        id = request.GET(user_id)
-        users = User.objects.get(usename=id) 
-        user_serializer = UserGameSerializer(users,many=True)
-        return id
-#'''
+        # #If the payload from the script does no match then it blows up the code. fix later on
+        user_id = request.GET['value']
+        
+        #Checks to see if the value is an actual user
+        #need to make sure its length is 26 characters. if its shorter or longer the function blows up
+        users = User.objects.all().filter(account_id=user_id)
+        user_serializer = UserSyncSerializer(users,many=True)
+        data = user_serializer.data    
+        return JsonResponse(data, safe=False)
+    
+    elif request.method=='PUT':
+        user_data = JSONParser().parse((request))
+
+        user=User.objects.get(account_id=user_data['value'])
+        user_serializer = UserSyncSerializer(user,data=user_data)
+        if user_serializer.is_valid():
+            user_serializer.save()
+            return JsonResponse("Update Successfully",safe=False)
+        return JsonResponse("Failed",safe=False)
