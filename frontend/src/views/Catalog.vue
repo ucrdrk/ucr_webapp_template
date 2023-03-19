@@ -2,22 +2,27 @@
     <div class="site">
         <NavBar navbartype="login"/>
         <div class="content">
-            <div class="mystuff">
-                <div class="fpga">
-                    <h2 class="fpgatitle">FPGA board connected</h2>
-                    <div class="sendbutton">Send games to board</div>
-                </div>
-                <div class="mygames">
-                    <h2>My Games</h2>
-                    <div class="myList">
-                      <div v-for="game in games" :key="game.id" class="card">
-                        <GameComp :info="game"/>
-                      </div>
-                    </div>
+          <div class="mystuff">
+            <div class="fpga" v-if="!showFullCatalog">
+                <h2 class="fpgatitle">FPGA board connected</h2>
+                <div class="sendbutton">Send games to board</div>
+            </div>
+            <div class="mygames" v-if="!showFullCatalog">
+              <div class="switchTitles">
+                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=true">Catalog</h2>
+                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=false">My Games</h2>
+              </div>
+                <div class="myList">
+                  <div v-for="game in games" :key="game.id" class="card">
+                    <GameComp :info="game"/>
+                  </div>
                 </div>
             </div>
-            <div class="catalog">
-              <h2>Catalog</h2>
+            <div class="catalog" v-if="showFullCatalog">
+              <div class="switchTitles">
+                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=true">Catalog</h2>
+                <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=false">My Games</h2>
+              </div>
               <div class="theList">
                 <div v-for="game in allGames" :key="game.id" class="card">
                   <GameComp :info="game"/>
@@ -28,6 +33,7 @@
                 <p @click="nextAllGames" class="movepage">Next</p>
               </div>
             </div>
+          </div>
         </div>
     </div>
 </template>
@@ -51,39 +57,57 @@
     flex-direction: row;
     height: 400px;
     /*background-color: red;*/
-    margin: 30px;
+    margin: 20px;
 }
 .fpga {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 20%;
 }
 .fpgatitle {
     width: 40%;
 }
+.switchtitle {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #506472;
+}
+
+.switchtitle:hover{
+  color: lightblue;
+}
+
+.switchtitle:active {
+  color: blue;
+}
+
+.switchTitles{
+  display: flex;
+  flex-direction: row;
+}
 .sendbutton {
-    text-align: center;
-    vertical-align: middle;
-    height: 90px;
-    line-height: 90px;
-    width: 288px;
-    background-color: #6D8B9C;
-    border-radius: 15px;
-    font-size: 24px;
-    margin-top: 20%;
+  text-align: center;
+  vertical-align: middle;
+  height: 90px;
+  line-height: 90px;
+  width: 288px;
+  background-color: #6D8B9C;
+  border-radius: 15px;
+  font-size: 24px;
+  margin-top: 20%;
 }
 .myList{
   display: grid;
-  grid-template-columns: 5fr 5fr 5fr 5fr;
-  grid-template-rows: 5fr 5fr 5fr 5fr;
+  grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr;
   column-gap: 1rem;
   row-gap: 250px;
   margin: 0 auto;
 }
 .theList{
   display: grid;
-  grid-template-columns: 5fr 5fr 5fr 5fr;
-  grid-template-rows: 5fr 5fr 5fr;
+  grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr;
   column-gap: 1rem;
   margin: 0 auto;
 }
@@ -94,7 +118,7 @@
   margin-bottom: 1rem;
 }
 .catalog {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 .nextPrev{
@@ -126,6 +150,7 @@
         allGames: allGames,
         nextPageURL: null,
         prevPageURL: null,
+        showFullCatalog: true
       }
     },
     methods: {
