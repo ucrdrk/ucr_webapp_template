@@ -1,3 +1,4 @@
 4D Warriors (315-5162),/media/rmaFolder/4D%20Warriors%20(315-5162).mra,/media/rbfFolder/SEGASYS1_20210618.rbf,arcade,https://archive.org/download/MAME216RomsOnlyMerged/4dwarrio.zip,games/mame/4dwarrio.zip
-19XX The War Against Destiny (Euro 960104),/media/rmaFolder/19XX%20The%20War%20Against%20Destiny%20(Euro%20960104).mra,/media/rbfFolder/jtcps2_20220819.rbf,arcade,https://archive.org/download/mame.0229/19xx.zip,https://archive.org/download/mame.0229/qsound.zip,games/mame/19xx.zip, games/mame/qsound.zip
-Adventure Quiz Capcom World 2 -Japan 920611-,/media/rmaFolder/Adventure%20Quiz%20Capcom%20World%202%20-Japan%20920611-.mra,/media/rbfFolder/jtcps1_20220819.rbf,arcade,https://archive.org/download/MAME217RomsOnlyMerged/MAME%200.217%20ROMs%20%28merged%29.zip/cworld2j.zip,games/mame/cworld2j.zip
+280Z-ZZAP (US),/media/rmaFolder/280Z-ZZAP%20(US).mra,/media/rbfFolder/SpaceInvaders_20211201.rbf,arcade,https://archive.org/download/mame.0240/280zzzap.zip,games/mame/280zzzap.zip
+1942,/media/rmaFolder/1942.mra,/media/rbfFolder/jt1942_20220819.rbf,arcade,https://archive.org/download/MAME216RomsOnlyMerged/1942.zip,https://archive.org/download/hbmame0220/1942.zip,games/mame/1942.zip,games/hbmame/1942.zip
+Megaman Zero 4 (USA),/media/games/GBA/Megaman%20Zero%204%20(USA).zip,/media/rbfFolder/Megaman%20Zero%204%20(USA).zip,core,EMPTY,EMPTY
