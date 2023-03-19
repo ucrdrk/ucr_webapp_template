@@ -14,6 +14,13 @@ class User(AbstractUser):
     birth_date = models.DateField(null=True, blank=True)
     avatar = models.ImageField(upload_to ='avatars/', null=True, blank=True)
     game = models.ManyToManyField('games.Games', blank=True)
+    play_flag = models.CharField(max_length=1000,null=True, blank=True)
+    sync_flag = models.BooleanField(default = False)
+    sync_done_flag = models.BooleanField(default = False)
+    updated= models.DateTimeField(blank=True, null=True) #auto_now is updated whenever a value is updated
+    current_storage = models.FloatField(null=True,blank=True)
+    total_storage = models.FloatField(null=True,blank=True)
+
     def __str__(self):
         return self.username
 
