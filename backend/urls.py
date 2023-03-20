@@ -29,6 +29,7 @@ urlpatterns = [
     #REST
     #path('api/account/', include('account.api.urls', 'account_api')),
     #url(r'^', include('account.api.urls'))
+
     
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
