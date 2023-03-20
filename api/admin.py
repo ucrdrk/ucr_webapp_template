@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Foo
+from api.models import Foo
+
 
 admin.site.register(Foo)
 
