@@ -33,3 +33,9 @@ class UserGameSerializer(serializers.ModelSerializer):
         model = User
         fields = ['account_id','username','game']
         depth = 1 #to get nested data
+
+
+class UserSyncSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['account_id','play_flag','sync_flag','sync_done_flag','updated','current_storage','total_storage']
