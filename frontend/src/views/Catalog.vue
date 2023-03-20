@@ -7,20 +7,20 @@
                 <h2 class="fpgatitle">FPGA board connected</h2>
                 <div class="sendbutton">Send games to board</div>
                 <div class="fpgainfo">
-                      <h3 class="storageused">Storage Used:</h3>
-                      <h3 class="storageleft">Storage Remaining:</h3>
-                      <h3 class="totalstorage">Total Storage</h3>
+                  <h3 class="storageused">Storage Used:</h3>
+                  <h3 class="storageleft">Storage Remaining:</h3>
+                  <h3 class="totalstorage">Total Storage</h3>
                 </div>
                 <div class="filter">
-                      <label class="labeltitle" for="menu">Select a filter:</label>
-                      <div class="filterops">
-                       <select id="menu" name="menu">
-                         <option value="option4">None</option>
-                         <option value="option1">Category</option>
-                         <option value="option2">Manufacturer</option>
-                         <option value="option3">Game Type</option>
-                       </select>
-                      </div>
+                  <label class="labeltitle" for="menu">Select a filter:</label>
+                  <div class="filterops">
+                    <select id="menu" name="menu">
+                      <option value="option4">None</option>
+                      <option value="option1">Category</option>
+                      <option value="option2">Manufacturer</option>
+                      <option value="option3">Game Type</option>
+                    </select>
+                  </div>
                 </div>
             </div>
             <div class="mygames" v-if="!showFullCatalog">
