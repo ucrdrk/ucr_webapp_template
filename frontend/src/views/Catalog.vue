@@ -42,6 +42,7 @@
               <div class="switchTitles">
                 <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=true">Catalog</h2>
                 <h2 class="switchtitle" :class="{active: showFullCatalog}" @click="showFullCatalog=false; getUserGames();">My Games</h2>
+              </div>
               <div class="theList">
                 <div v-for="game in allGames" :key="game.id" class="card">
                   <GameComp :info="game"/>
@@ -55,7 +56,6 @@
           </div>
         </div>
     </div>
-  </div>
 </template>
 
 <style>
