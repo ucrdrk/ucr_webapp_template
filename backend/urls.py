@@ -27,7 +27,7 @@ urlpatterns = [
     #when i put it in the backend it worked. made it unique kept getting error
     path('parent/<int:id>/child/create/', ChildCreateView.as_view(), name='create_child'),
     #REST
-    #path('api/account/', include('account.api.urls', 'account_api')),
+    path('api/account/', include('account.api.urls', 'account_api')),
     #url(r'^', include('account.api.urls'))
 
     
